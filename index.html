@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Mboowa">
+    <title>Daniel Mboowa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <div class="container">
+            <span>Daniel Mboowa</span>
+        </div>
+        <div class="container">
+            <span>Computer Science | Bioinformatics | Computational Biology | Soccer <span id='toggle' onclick="changeMode()">🌞</span></span>
+        </div>
+        <div id="heading">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#publications">Publications</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </header>
+
+    <h1>Projects</h1>
+
+    <h2>Python Projects</h2>
+
+    <h4>Alarm Program</h4>
+    <p>This program has two python modules imported(datetime and time) the datetime module is used to create a specified time or 
+        get the current time and date.It can also be used to format time to something else like adding the month year or even day into your algorithim.The time has its importance like;
+        it can be used to measure execution time,pausing execution and converting timestamps to readable time.
+        The function uses a for loop to check for factors of n.
+
+It iterates from 2 to the square root of n (rounded down) plus 1. This is because a larger factor of n would have a corresponding smaller factor within this range.
+
+If n is divisible by any number in this range (n % i == 0), the function returns False, indicating that n is not a prime number.</p>
+    
+    <pre id="alarm">
+<span id="system">import</span> datetime
+<span id="system">import</span> time
+
+<span id="system">def</span> set_alarm(alarm_time):
+    <span id="print">print</span>(<span id="string">f"Alarm set for</span> <span id="system">{</span><span id="string">alarm_time</span><span id="system">}</span>")
+    is_running = <span id="system">True</span>
+
+    <span id="system">while</span> is_running:
+        current_time = datetime.datetime.now().strftime(<span id="string">"%H:%M:%S"</span>)
+        <span id="print">print</span>(current_time)
+        <span id="system">if</span> current_time == alarm_time:
+            <span id="print">print</span>(<span id="string">"wake up"</span>)
+            is_running = <span id="system">False</span>
+        time.sleep(1)
+
+<span id="system">if</span> __name__== "__main__":
+    alarm_time = <span id="print">input</span>(<span id="string">"Enter an alarm time (HRS:MIN:SEC): "</span>)
+    set_alarm(alarm_time)
+    </pre>
+    <p>Circumference calculator</p>
+    <p>This simple proogram uses a math module for carrying out basic calculations.
+        The user is prompted to give user input and the radius is collected. 
+        It is then used in the formulae for circumference and the result is printed out.
+    </p>
+
+
+    <pre id="alarm">
+    <span id="system">import</span> math
+    radius = <span id="print">float</span>(<span id="print">input</span>(<span id="string">"Enter the radius: "</span>))
+    math.pi = <span id="digits">22</span>/<span id="digits">7</span>
+    circumference = <span id="digits">2</span> * math.pi * radius
+    print(<span id="string">f"circumference =</span> <span id="system">{</span><span id="print">round</span>(circumference)<span id="system">}</span> <span id="string">cm"</span>)
+        </pre>
+        <h3>Turtle grphics</h3>
+        <p>
+            The loop runs 270 times, with <span id="darkblue">i ranging from 0 to 269</span>.
+
+Inside the loop, the color h is converted from <span id="darkblue">HSV to RGB using colorsys.hsv_to_rgb(h, 1, 1)</span>, and the result is stored in c.
+The value of <span id="darkblue">h is then set to 0.0008</span>
+The fill color of the turtle is set to c.
+<span id="darkblue">t.begin_fill()</span> starts filling the shape with the current fill color.
+The turtle moves forward by <span id="darkblue">i units</span>.
+The turtle turns left by 890 degrees <span id="darkblue">(effectively 130 degrees because 890 % 360 = 130)</span>.
+The turtle draws a circle with a radius of 870 units.
+Another nested loop runs <span id="darkbluue">270 times with j ranging from 0 to 269</span>:
+The turtle moves forward by <span id="darkblue">i * j units</span>.
+The turtle turns right by 90 degrees.
+<span id="darkblue">t.end_fill()</span> ends the filling of the shape.
+        </p>
+        <pre id="alarm">
+<span id="system">import</span> turtle <span id="system">as</span> t 
+<span id="system">import</span> colorsys
+t.bgcolor(<span id="string">"black"</span>)
+t.tracer(<span id="digits">100</span>)
+t.pensize(<span id="digits">3</span>)
+h=<span id="digits">0.5</span>
+<span id="system">for</span> i <span id="system">in</span> <span id="print">range</span> (<span id="digits">250</span>):
+	c=colorsys.hsv_to_rgb(h,<span id="digits">1</span>,<span id="digits">1</span>)
+	h=<span id="digits">0.0008</span>
+	t.fillcolor(c)
+	t.begin_fill()
+	t.fd(i)
+	t.lt(<span id="digits">520</span>)
+	t.circle(<span id="digits">520</span>)
+	<span id="system">for</span> j <span id="system">in</span> <span id="print">range</span>(<span id="digits">22</span>):
+		t.fd(i*j)
+		t.rt(<span id="digits">90</span>)
+	t.end_fill()
+            </pre>
+            <h3>Calculator program<h3>
+                <p>
+                    <span id="system">For the basic calculator program it reguires mainly a math module, 
+                    number_variables and a bunch of if_statements plus maybe operators 
+                    which help finish the math.
+                    This program can be written by almost everybody who has understood the fundamentals of python.</span>
+                </p>
+
+            <pre id="alarm">
+                <span id="system">import</span> math
+                first_number = <span id="print">float</span>(<span id="print">input</span>(<span id="string">"Enter first number: "</span>))
+                <span id="print">print</span>(<span id="string">"Your first number has been recorded :) "</span>)
+                second_number = <span id="print">float</span>(<span id="print">input</span>(<span id="string">"Enter second number: "</span>))
+                <span id="print">print</span>(<span id="string">"Your second number has been recorded :) "</span>)
+                
+                operator = <span id="print">input</span>(<span id="string">"which operator should be used |+,-,/,*|: "</span>)
+                <span id="system">def</span> <span id="digits">choose_operator</span>(operator,first_number,second_number):
+                    try:
+                        <span id="system">if</span> operator == <span id="string">"+"</span>:
+                            add = (first_number + second_number)
+                            <span id="print">print</span>(<span id="string">f"Therefore,</span> <span id="system">{</span>first_number<span id="system">}</span> <span id="system">{</span>operator<span id="system">}</span> <span id="system">{</span>second_number<span id="system">}</span> <span id="string">=</span> <span id="system">{</span><span id="print">round</span>(add,<span id="digits"><span id="digits">3</span></span>)<span id="system">}</span><span id="string">"</span>)
+                        <span id="system">elif</span> operator == <span id="string">"-"</span>:
+                            sub = (first_number - second_number)
+                            <span id="print">print</span>(<span id="string">f"Therefore,</span> <span id="system">{</span>first_number<span id="system">}</span> <span id="system">{</span>operator<span id="system">}</span> <span id="system">{</span>second_number<span id="system">}</span> <span id="string">=</span> <span id="system">{</span><span id="print">round</span>(sub,<span id="digits">3</span>)<span id="system">}</span><span id="string">"</span>)
+                        <span id="system">elif</span> operator == <span id="string">"/"</span>:
+                            div = (first_number / second_number)
+                            <span id="print">print</span>(<span id="string">f"Therefore,</span> <span id="system">{</span>first_number<span id="system">}</span> <span id="system">{</span>operator<span id="system">}</span> <span id="system">{</span>second_number<span id="system">}</span> <span id="string">=</span> <span id="system">{</span><span id="print">round</span>(div,<span id="digits">3</span>)<span id="system">}</span><span id="string">"</span>)
+                        <span id="system">elif</span> operator == <span id="string">"*"</span>:
+                            mul = (first_number * second_number)
+                            <span id="print">print</span>(<span id="string">f"Therefore,</span> <span id="system">{</span>first_number<span id="system">}</span> <span id="system">{</span>operator<span id="system">}</span> <span id="system">{</span>second_number<span id="system">}</span> <span id="string">=</span> <span id="system">{</span><span id="print">round</span>(mul,<span id="digits">1</span>)<span id="system">}</span><span id="string">"</span>)
+                    except <span id="print">Exception</span> <span id="system">as</span> e:
+                        <span id="print">print</span>(<span id="string">'Bad Math'</span>)
+
+                choose_operator(operator,first_number,second_number)
+                                
+            </pre>
+            <p>Click counter</p>
+            <pre id="alarm">
+                <span id="print">print</span>(<span id="string">"Press Enter to start counting: "</span>)
+                num=<span id="digits">0</span>
+                <span id="system">while True</span>:
+                    input(<span id="string">""</span>)
+                    num+=<span id="digits">1</span>
+                    <span id="print">print</span>(num)
+            </pre>
+            <h3>Prime number checkpoint</h3>
+            <p>
+                The loop checks for divisors of n from 2 up to the square root of n. 
+                If n is divisible by any of these numbers, it is not a prime number.
+                <br> 
+                This is an efficient way to test for primality because if n has a factor greater than its square root, 
+                it must also have a corresponding factor smaller than its square root.
+            </p>
+            <pre id="alarm">
+n = <span id="print">int</span>(<span id="print">input</span>(<span id="string">"Enter a number: "</span>))
+<span id="system">def</span> <span id="darkblue">is_prime</span>(n):
+    <span id="system">if</span> n <= <span id="digits">1</span>:
+        return (<span id="string">"It is not a prime number"</span>)
+    <span id="system">for</span> i <span id="system">in</span> <span id="print">range</span>(<span id="digits">2</span>, <span id="print">int</span>(n**<span id="digits">0.5</span>)+<span id="digits">1</span>):
+        <span id="system">if</span> n%i == <span id="digits">0</span>:
+            return (<span id="string">"It is not a prime number"</span>)
+    <span id="print">print</span>(<span id="string">"It is a prime number"</span>)
+<span id="print">print</span>(is_prime(n))
+            </pre>
+    <script src='script.js'></script>
+</body>
+</html>

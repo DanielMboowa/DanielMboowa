@@ -1,0 +1,49 @@
+.container {
+  text-align: center;
+  display: block;
+  background-color:rgb(255, 0, 25);
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(0, 255, 247);
+}
+#heading {
+  background-color: blue;
+  text-align:center;
+  font-size: large;
+  font-weight: bold;
+  color:rgb(60, 255, 0);
+  display: block;
+}
+
+#alarm{
+  text-align: left;
+  border: 3px groove black;
+  border-radius: 10px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  box-shadow: 3px,3px, 6px, black;
+}
+
+#system{
+  color: orange;
+}
+#print{
+  color: purple;
+}
+#string{
+  color: rgb(19, 133, 19)
+}
+#digits{
+  color: rgb(10, 176, 227)
+}
+#darkblue{
+  color: rgb(6, 69, 243)
+}
+#toggle{
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
