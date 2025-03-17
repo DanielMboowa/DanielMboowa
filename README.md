@@ -1,5 +1,9 @@
-Daniel Mboowa
-About Me
+#Daniel Mboowa
+
+#About Me
+
+
+
 Hello there! 👋 My name is Daniel Mboowa, and I am passionately exploring the world of programming while learning how it applies to various fields within Bioinformatics.
 
 I have already created some projects based on what I’ve learned, which has helped me solidify my understanding of Python fundamentals. In addition to Python, I am also diving into other programming languages such as R, C, and JavaScript. Balancing these studies hasn’t been easy, especially as I’m currently a freshman at Westford Academy, MA.
