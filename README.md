@@ -1,12 +1,17 @@
-# Daniel Mboowa
+Daniel Mboowa
+About Me
+Hello there! 👋 My name is Daniel Mboowa, and I am passionately exploring the world of programming while learning how it applies to various fields within Bioinformatics.
 
-# About Me
-Hello there 👋. My name is Daniel Mboowa and I am currently working my way to learn programming and understand how it is used in various fields of Bioinformatics.
-I have made some projects basing on what I have learnt which has helped me to understand the fundamentals of Python. I am also learning other languages like R programming,C programming and javascript. It hasn't been easy because currently, I am a Freshman at Westford Academy MA. As I make my way through programming I am also leanring that in  programming, YOUR IMAGINATION IS THE LIMIT because right now AI is being used to solve various problems in different fields work fields. I also want to use this chance i have got learn to learn how Bioinformatics tools work and use them to simplify the work Bioinformaticians do.
-# Projects
-I have created some simple projects in Python to help me understand it and refer to them when I get lost to set me back on track.
+I have already created some projects based on what I’ve learned, which has helped me solidify my understanding of Python fundamentals. In addition to Python, I am also diving into other programming languages such as R, C, and JavaScript. Balancing these studies hasn’t been easy, especially as I’m currently a freshman at Westford Academy, MA.
 
-# Contacts
-You can reach out to me in the following ways;
-Through Gmail: mboowadaniel70@gmail.com
-Linkedin (Username): Daniel Mboowa 
+Through this journey, I’ve come to realize that in programming, your imagination is the limit. With AI revolutionizing how problems are solved across diverse industries, I’m inspired to use this opportunity to understand and leverage Bioinformatics tools to simplify and enhance the work of Bioinformaticians.
+
+Projects
+To deepen my understanding of Python, I’ve built a variety of small projects. These serve not only as learning experiences but also as valuable references whenever I need to recalibrate and stay on track.
+
+Contacts
+Feel free to connect with me through the following channels:
+
+Email: mboowadaniel70@gmail.com
+
+LinkedIn: Daniel Mboowa
