@@ -11,6 +11,7 @@ I have already created some projects based on what I’ve learned, which has hel
 Through this journey, I’ve come to realize that in programming, your imagination is the limit. With AI revolutionizing how problems are solved across diverse industries, I’m inspired to use this opportunity to understand and leverage Bioinformatics tools to simplify and enhance the work of Bioinformaticians.
 
 #Projects
+
 To deepen my understanding of Python, I’ve built a variety of small projects. These serve not only as learning experiences but also as valuable references whenever I need to recalibrate and stay on track.
 
 Contacts
