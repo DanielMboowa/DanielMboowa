@@ -10,16 +10,16 @@ def timeit(func):
         return result
     return wrapper
 
-
 @timeit
-lights = [
-    ('Green',3),
-    ('Yellow',1.5),
-    ('Red',3),
-]
-colors = cycle(lights)
-for i in range(2):
-    while True:
-        c,s = next(colors)
-        print(c)
-        time.sleep(s)
+def begin_cycle():
+    lights = [
+        ('Green',3),
+        ('Yellow',1.5),
+        ('Red',3),
+    ]
+    colors = cycle(lights)
+    for i in range(2):
+        while True:
+            c,s = next(colors)
+            print(c)
+            time.sleep(s)
