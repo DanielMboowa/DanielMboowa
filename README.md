@@ -19,6 +19,6 @@ Feel free to connect with me through the following channels:
 
 Email: [Email me](mailto:mboowadaniel70@gmail.com)
 
-LinkedIn: [LinkedIn](www.linkedin.com/in/daniel-mboowa-09a228344)
+LinkedIn: [LinkedIn](https://www.linkedin.com/in/daniel-mboowa-09a228344/)
 
 
