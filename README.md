@@ -17,6 +17,8 @@ To deepen my understanding of Python, I’ve built a variety of small projects. 
 Contacts
 Feel free to connect with me through the following channels:
 
-Email: mboowadaniel70@gmail.com
+Email: [Email me](mailto:mboowadaniel70@gmail.com)
 
-LinkedIn: Daniel Mboowa
+LinkedIn: [LinkedIn](www.linkedin.com/in/daniel-mboowa-09a228344)
+
+
