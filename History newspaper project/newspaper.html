@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Revolutionary Times - World War II Edition</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Special+Elite&display=swap');
+        
+        body {
+            background-color: #f5f5f0;
+            background-image: url('https://www.transparenttextures.com/patterns/old-paper.png');
+            font-family: 'Old Standard TT', serif;
+            color: #333;
+            line-height: 1.4;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .newspaper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            background-color: #fff;
+            border: 1px solid #999;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px double #000;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+        
+        .title {
+            font-family: 'Special Elite', cursive;
+            font-size: 60px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            font-style: italic;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        
+        .date {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .headline {
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 20px 0 10px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+        }
+        
+        .subhead {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 15px 0 5px;
+        }
+        
+        .byline {
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .article {
+            margin-bottom: 30px;
+            column-count: 2;
+            column-gap: 30px;
+            text-align: justify;
+        }
+        
+        .lead-article {
+            column-count: 3;
+        }
+        
+        .photo {
+            width: 100%;
+            margin: 10px 0;
+            border: 1px solid #000;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+        }
+        
+        .caption {
+            font-size: 12px;
+            font-style: italic;
+            text-align: center;
+            margin-top: -5px;
+        }
+        
+        .pullquote {
+            font-family: 'Special Elite', cursive;
+            font-size: 20px;
+            border-left: 3px solid #000;
+            padding-left: 15px;
+            margin: 15px 0;
+            font-style: italic;
+        }
+        
+        .advertisement {
+            background-color: #f0f0f0;
+            border: 1px dashed #000;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            font-family: 'Special Elite', cursive;
+        }
+        
+        .ad-title {
+            font-weight: bold;
+            font-size: 18px;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+        
+        .columns {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        
+        .column {
+            width: 48%;
+        }
+        
+        .map {
+            width: 100%;
+            height: 300px;
+            background-color: #ddd;
+            margin: 10px 0;
+            border: 1px solid #000;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .map-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Operation_Overlord_-_map.jpg/800px-Operation_Overlord_-_map.jpg');
+            background-size: cover;
+            opacity: 0.8;
+        }
+        
+        .map-label {
+            position: absolute;
+            background-color: rgba(255,255,255,0.7);
+            padding: 2px 5px;
+            border: 1px solid #000;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .footer {
+            text-align: center;
+            border-top: 3px double #000;
+            margin-top: 30px;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+        
+        .section-title {
+            font-family: 'Special Elite', cursive;
+            font-size: 24px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            margin: 30px 0 15px;
+            padding-bottom: 5px;
+        }
+        
+        .battle-timeline {
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 15px 0;
+            background-color: rgba(255,255,255,0.7);
+        }
+        
+        .timeline-event {
+            margin-bottom: 10px;
+        }
+        
+        .timeline-date {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="header">
+            <h1 class="title">The Revolutionary Times</h1>
+            <div class="subtitle">Bringing You the Truth from the Front Lines</div>
+            <div class="date">📅 September 1, 1939 – September 2, 1945 📰 World War II Edition</div>
+        </div>
+        
+        <div class="headline">War Erupts in Europe: Germany Invades Poland</div>
+        <div class="byline">By Edward R. Murrow |  Warsaw, Poland</div>
+        
+        <div class="article lead-article">
+            <p>In a shocking move, Nazi Germany, led by Adolf Hitler, launched a full-scale invasion of Poland on September 1, 1939. Using the Blitzkrieg (lightning war) strategy, German forces quickly advanced, bombing cities and overwhelming Polish defenses.</p>
+            
+            <div class="pullquote">"The world stands at the brink of war. We will defend freedom against tyranny." — British Prime Minister Neville Chamberlain ()</div>
+            
+            <p>In response, Britain and France declared war on Germany today, marking the official start of World War II. The conflict has been brewing since Germany's annexation of Czechoslovakia earlier this year, but this unprovoked attack on Poland has forced the Allies to act.</p>
+            
+            <img src="C:\Users\mboow\Downloads\Screenshot 2025-06-02 8.54.42 AM.png" class="photo" alt="German troops invading Poland">
+            <div class="caption">German troops march into Poland, September 1939 (Bundesarchiv)</div>
+            
+            <p>Eyewitnesses report devastating Luftwaffe bombing raids on Warsaw, with civilian casualties mounting. The Polish army, though valiant, is outmatched by Germany's modern tanks and aircraft. France has begun mobilizing its forces along the Maginot Line, while Britain prepares its Royal Air Force for possible attacks.</p>
+            
+            <div class="subhead">Allied vs. Axis Powers Take Shape</div>
+            <p>As nations take sides, the conflict is rapidly escalating:</p>
+            <p><strong>Axis Powers:</strong> Germany, Italy, and Japan unite in aggression.</p>
+            <p><strong>Allied Powers:</strong> Britain, France, and Poland stand together, with hopes for support from other nations.</p>
+            
+            <div class="subhead">Fear Spreads Across Europe</div>
+            <p>Citizens in multiple countries brace for uncertain times as military forces mobilize. There is growing concern that this war will surpass the devastation of World War I, with new technologies and deadlier weapons in play.</p>
+        </div>
+        
+        <div class="columns">
+            <div class="column">
+                <div class="section-title">Pacific Theater</div>
+                <div class="headline">Victory at Midway: Turning the Tide</div>
+                <div class="byline"> Midway Atoll, Pacific Ocean</div>
+                
+                <div class="article">
+                    <p>In a major victory for the United States, the Battle of Midway, fought from June 3–7, 1942, has crippled the Japanese fleet. The battle, led by Admiral Chester W. Nimitz, saw U.S. forces destroy four Japanese aircraft carriers, shifting the balance of power in the Pacific War.</p>
+                    
+                    <div class="pullquote">"Midway was the most crucial battle of the Pacific War." — Admiral Chester W. Nimitz (Tucker)</div>
+                    
+                    <p>Japanese forces, under Admiral Isoroku Yamamoto, attempted to capture Midway Island as part of their plan to dominate the Pacific. However, U.S. intelligence cracked Japan's codes, allowing American forces to ambush the enemy fleet.</p>
+                    
+                    <img src="C:\Users\mboow\OneDrive\Pictures\Screenshots\Screenshot 2025-05-31 225414.png" class="photo" alt="USS Yorktown damaged at Midway">
+                    <div class="caption">The U.S. aircraft carrier Yorktown shortly after being struck by Japanese bombs on June 4, 1942 (Naval Historical Center)</div>
+                    
+                    <p>By June 7, Japan had lost four carriers, over 300 planes, and thousands of sailors, forcing them onto the defensive for the rest of the war. The victory at Midway proved that Japan's dominance in the Pacific could be challenged, paving the way for U.S. offensives toward final victory.</p>
+                    
+                    <div class="battle-timeline">
+                        <div class="subhead">Battle of Midway Timeline</div>
+                        <div class="timeline-event">
+                            <span class="timeline-date">June 3:</span> Japanese forces detected approaching Midway
+                        </div>
+                        <div class="timeline-event">
+                            <span class="timeline-date">June 4:</span> U.S. dive bombers destroy Akagi, Kaga, and Soryu
+                        </div>
+                        <div class="timeline-event">
+                            <span class="timeline-date">June 5:</span> Hiryu counterattacks, damages Yorktown
+                        </div>
+                        <div class="timeline-event">
+                            <span class="timeline-date">June 6:</span> Hiryu sunk, Japanese retreat
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="section-title">European Theater</div>
+                <div class="headline">Dunkirk: A Homefront Victory</div>
+                <div class="byline">📅 June 1940 |  London, England</div>
+                
+                <div class="article">
+                    <p>The Dunkirk evacuation, known as Operation Dynamo, saved over 300,000 British and Allied troops, bringing them home to fight another day. As German forces rapidly took France, British troops were trapped on the shores of Dunkirk.</p>
+                    
+                    <div class="pullquote">"Wars are not won by evacuations." — Prime Minister Winston Churchill (Dunkirk, pp. 896-898)</div>
+                    
+                    <p>Thanks to a heroic effort by the Royal Navy and civilian volunteers, soldiers were ferried across the English Channel, escaping disaster. Despite this warning from Churchill, the successful rescue boosted morale and gave Britain strength to continue the fight.</p>
+                    
+                    <img src="C:\Users\mboow\Downloads\Screenshot 2025-05-31 11.06.20 PM.png" class="photo" alt="Troops at Dunkirk">
+                    <div class="caption">British troops awaiting evacuation at Dunkirk, June 1940 (Imperial War Museum)</div>
+                    
+                    <div class="subhead">The People's Role in Dunkirk</div>
+                    <p>The Royal Navy, backed by civilian boats—fishing vessels, pleasure cruisers, and merchant ships—worked tirelessly to bring soldiers home. Many volunteers risked their lives, sailing through gunfire to reach stranded troops.</p>
+                    
+                    <p>Meanwhile, on the homefront, British citizens welcomed the returning troops, providing food, shelter, and supplies. This event motivated Britain, strengthening its resolve to fight on without surrender.</p>
+                    
+                    <div class="dunkirk-section">
+    <!-- Compact Vintage Button -->
+    <button class="compact-button" id="mapToggle">
+        <span class="button-text">OPERATION DYNAMO MAP</span>
+        <span class="loading-spinner">
+            <svg viewBox="0 0 50 50">
+                <circle cx="25" cy="25" r="20" fill="none" stroke="#f0e6d2" stroke-width="4"></circle>
+            </svg>
+        </span>
+    </button>
+
+    <!-- Modal Overlay -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <button class="close-button">&times;</button>
+            
+            <!-- Detailed Map Container -->
+            <div class="map-container">
+                <div class="map">
+                    <!-- Loading Screen -->
+                    <div class="map-loading" id="mapLoading">
+                        <div class="spinner"></div>
+                        <div class="loading-text">DECRYPTING CHANNEL NAVIGATION CHARTS...</div>
+                        <div class="signal-meter">
+                            <div class="signal-bar" style="--delay:0"></div>
+                            <div class="signal-bar" style="--delay:0.2"></div>
+                            <div class="signal-bar" style="--delay:0.4"></div>
+                            <div class="signal-bar" style="--delay:0.6"></div>
+                            <div class="signal-bar" style="--delay:0.8"></div>
+                        </div>
+                    </div>
+
+                    <!-- Historical Map Base -->
+                    <div class="historical-map">
+                        <!-- Background Map Image -->
+                        <img src="C:\Users\mboow\OneDrive\Pictures\Screenshots\Screenshot 2025-05-31 234551.png" alt="English Channel Map" class="map-image">
+                        
+                        <!-- Blue Water Overlay -->
+                        <div class="water-overlay"></div>
+                        
+                        <!-- Evacuation Routes -->
+                        <svg class="evacuation-routes" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet">
+                            <!-- Route Z (Dunkirk to Dover) -->
+                            <path class="route route-z" d="M250,350 Q400,275 550,200"/>
+                            
+                            <!-- Route Y (Dunkirk to Ramsgate) -->
+                            <path class="route route-y" d="M250,350 Q350,250 450,150"/>
+                            
+                            <!-- Route X (Dunkirk to Southampton) -->
+                            <path class="route route-x" d="M250,350 Q300,200 350,100 L400,50"/>
+                        </svg>
+                        
+                        <!-- Key Locations -->
+                        <div class="location-marker dunkirk" style="top: 70%; left: 30%;">
+                            <div class="location-pin"></div>
+                            <div class="location-label">DUNKIRK</div>
+                        </div>
+                        
+                        <div class="location-marker dover" style="top: 40%; left: 65%;">
+                            <div class="location-pin"></div>
+                            <div class="location-label">DOVER</div>
+                        </div>
+                        
+                        <div class="location-marker ramsgate" style="top: 35%; left: 60%;">
+                            <div class="location-pin"></div>
+                            <div class="location-label">RAMSGATE</div>
+                        </div>
+                        
+                        <div class="location-marker calais" style="top: 65%; left: 35%;">
+                            <div class="location-pin"></div>
+                            <div class="location-label">CALAIS</div>
+                        </div>
+                        
+                        <!-- German Forces Area -->
+                        <div class="german-forces" style="top: 75%; left: 40%; width: 120px; height: 80px;">
+                            <div class="german-label">GERMAN FORCES</div>
+                            <div class="german-line" style="top: 20px; left: 0;"></div>
+                            <div class="german-line" style="top: 40px; left: 10px;"></div>
+                            <div class="german-line" style="top: 60px; left: 5px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Map Overlays -->
+                    <div class="map-overlays">
+                        <!-- Dunkirk Info Box -->
+                        <div class="info-box dunkirk-box" style="top: 65%; left: 25%;">
+                            <h3>DUNKIRK EVACUATION</h3>
+                            <div class="info-detail">
+                                <span class="detail-label">Dates:</span>
+                                <span>May 26 - June 4, 1940</span>
+                            </div>
+                            <div class="info-detail">
+                                <span class="detail-label">Troops Evacuated:</span>
+                                <span>338,226</span>
+                            </div>
+                            <div class="info-detail ships">
+                                <span class="counter-number" data-target="933">0</span>
+                                <span class="ship-icon"></span> vessels deployed
+                            </div>
+                        </div>
+                        
+                        <!-- Route Information -->
+                        <div class="route-info route-z-info" style="top: 50%; left: 45%;">
+                            <h4>ROUTE Z (Dover)</h4>
+                            <p>Shortest but most dangerous</p>
+                            <p><span class="counter-number" data-target="312">0</span> ships</p>
+                            <p>39.7 nautical miles</p>
+                        </div>
+                        
+                        <div class="route-info route-y-info" style="top: 40%; left: 40%;">
+                            <h4>ROUTE Y (Ramsgate)</h4>
+                            <p>Secondary evacuation port</p>
+                            <p><span class="counter-number" data-target="419">0</span> ships</p>
+                            <p>55.2 nautical miles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Base Styles */
+    .dunkirk-section {
+        font-family: 'Times New Roman', serif;
+        margin: 20px 0;
+    }
+
+    /* Compact Button */
+    .compact-button {
+        padding: 6px 12px;
+        background: linear-gradient(to bottom, #6b4e37, #3d2b1f);
+        color: #f0e6d2;
+        border: 1px solid #5a4428;
+        border-radius: 3px;
+        font-family: 'Courier New', monospace;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin: 5px 0;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .compact-button:hover {
+        background: linear-gradient(to bottom, #7a5c46, #4a3625);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .loading-spinner {
+        width: 14px;
+        height: 14px;
+        display: none;
+    }
+
+    /* Modal Overlay with Animation */
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0);
+        z-index: 1000;
+        display: none;
+        opacity: 0;
+        transition: background 0.3s ease, opacity 0.3s ease;
+        overflow-y: auto;
+    }
+
+    .modal-overlay.active {
+        display: block;
+        background: rgba(0,0,0,0.85);
+        opacity: 1;
+    }
+
+    .modal-content {
+        background: #f5f5f0;
+        margin: 2vh auto;
+        padding: 20px;
+        width: 90%;
+        max-width: 900px;
+        position: relative;
+        border: 3px double #333;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .modal-overlay.active .modal-content {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #900;
+        color: white;
+        border: none;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        line-height: 1;
+        cursor: pointer;
+        z-index: 10;
+        border-radius: 50%;
+        transition: all 0.2s;
+    }
+
+    .close-button:hover {
+        background: #c00;
+        transform: scale(1.1);
+    }
+
+    /* Map Container */
+    .map-container {
+        width: 100%;
+        height: 70vh;
+        min-height: 500px;
+        position: relative;
+        margin: 15px 0;
+    }
+
+    .map {
+        width: 100%;
+        height: 100%;
+        background-color: #e8e8e8;
+        border: 1px solid #333;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Historical Map */
+    .historical-map {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .map-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .water-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(26, 107, 176, 0.3);
+        z-index: 1;
+    }
+
+    /* Evacuation Routes */
+    .evacuation-routes {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+    .route {
+        fill: none;
+        stroke-width: 3;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: draw 3s forwards;
+    }
+
+    .route-z {
+        stroke: rgba(255, 50, 50, 0.7);
+        animation-delay: 0.5s;
+    }
+
+    .route-y {
+        stroke: rgba(50, 150, 50, 0.7);
+        animation-delay: 1s;
+    }
+
+    .route-x {
+        stroke: rgba(50, 50, 255, 0.7);
+        animation-delay: 1.5s;
+    }
+
+    /* Location Markers */
+    .location-marker {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        text-align: center;
+    }
+
+    .location-pin {
+        width: 12px;
+        height: 12px;
+        background: #cc3333;
+        transform: rotate(45deg);
+        margin: 0 auto 3px;
+    }
+
+    .dunkirk .location-pin {
+        background: #0055cc;
+    }
+
+    .dover .location-pin,
+    .ramsgate .location-pin {
+        background: #00aa44;
+    }
+
+    .location-label {
+        font-size: 12px;
+        font-weight: bold;
+        white-space: nowrap;
+        background: rgba(255,255,255,0.8);
+        padding: 2px 5px;
+        border-radius: 3px;
+    }
+
+    /* German Forces */
+    .german-forces {
+        position: absolute;
+        z-index: 3;
+        border: 2px dashed #cc3333;
+        transform: translate(-50%, -50%);
+    }
+
+    .german-label {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        font-size: 11px;
+        font-weight: bold;
+        color: #cc3333;
+        white-space: nowrap;
+    }
+
+    .german-line {
+        position: absolute;
+        height: 2px;
+        background: #cc3333;
+        width: 100%;
+    }
+
+    /* Map Overlays */
+    .map-overlays {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 4;
+    }
+
+    .info-box {
+        position: absolute;
+        background: rgba(0, 85, 204, 0.8);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        max-width: 200px;
+        transform: translate(-50%, -50%);
+        pointer-events: auto;
+    }
+
+    .info-box h3 {
+        margin: 0 0 8px 0;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .info-detail {
+        font-size: 12px;
+        margin: 5px 0;
+        display: flex;
+    }
+
+    .detail-label {
+        font-weight: bold;
+        margin-right: 5px;
+        min-width: 100px;
+    }
+
+    .ships {
+        margin-top: 8px;
+        padding-top: 8px;
+        border-top: 1px dashed rgba(255,255,255,0.5);
+    }
+
+    .ship-icon {
+        margin: 0 3px;
+    }
+
+    /* Route Information */
+    .route-info {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 8px;
+        border-radius: 5px;
+        font-size: 12px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transform: translate(-50%, -50%);
+        max-width: 150px;
+        animation: fadeIn 1s forwards;
+    }
+
+    .route-info h4 {
+        margin: 0 0 5px 0;
+        color: #333;
+    }
+
+    .route-info p {
+        margin: 3px 0;
+    }
+
+    .route-z-info {
+        border-left: 3px solid rgba(255, 50, 50, 0.7);
+    }
+
+    .route-y-info {
+        border-left: 3px solid rgba(50, 150, 50, 0.7);
+    }
+
+    /* Loading Animation */
+    .map-loading {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,20,40,0.9);
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #f0e6d2;
+        font-family: 'Courier New', monospace;
+    }
+
+    .spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid rgba(255,255,255,0.3);
+        border-radius: 50%;
+        border-top-color: #fff;
+        animation: spin 1s ease-in-out infinite;
+        margin-bottom: 15px;
+    }
+
+    .loading-text {
+        letter-spacing: 1px;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .signal-meter {
+        display: flex;
+        gap: 3px;
+        margin-top: 20px;
+        height: 30px;
+        align-items: flex-end;
+    }
+
+    .signal-bar {
+        width: 8px;
+        background: linear-gradient(to top, #0055aa, #00aaff);
+        height: 0%;
+        animation: signalPulse 1.5s infinite ease-in-out;
+        animation-delay: var(--delay);
+    }
+
+    /* Animations */
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+
+    @keyframes signalPulse {
+        0%, 100% { height: 20%; }
+        50% { height: 100%; }
+    }
+
+    @keyframes draw {
+        to { stroke-dashoffset: 0; }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translate(-50%, -40%); }
+        to { opacity: 1; transform: translate(-50%, -50%); }
+    }
+
+    @keyframes countUp {
+        from { opacity: 0; transform: translateY(5px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+        .modal-content {
+            width: 95%;
+            margin: 1vh auto;
+            padding: 15px;
+        }
+
+        .map-container {
+            height: 60vh;
+            min-height: 400px;
+        }
+
+        .info-box {
+            max-width: 160px;
+        }
+
+        .info-box h3 {
+            font-size: 13px;
+        }
+
+        .info-detail {
+            font-size: 11px;
+        }
+
+        .route-info {
+            max-width: 130px;
+            font-size: 11px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .map-container {
+            height: 50vh;
+            min-height: 300px;
+        }
+
+        .info-box {
+            max-width: 140px;
+            padding: 8px;
+        }
+
+        .info-box h3 {
+            font-size: 12px;
+        }
+
+        .detail-label {
+            min-width: 80px;
+        }
+
+        .loading-text {
+            font-size: 12px;
+        }
+    }
+</style>
+
+<script>
+    document.getElementById('mapToggle').addEventListener('click', function() {
+        const button = this;
+        const modal = document.getElementById('modalOverlay');
+        const spinner = button.querySelector('.loading-spinner');
+        
+        // Show loading spinner on button
+        spinner.style.display = 'block';
+        
+        // Activate modal with transition
+        modal.classList.add('active');
+        
+        // Simulate loading sequence
+        setTimeout(() => {
+            document.getElementById('mapLoading').style.display = 'none';
+            spinner.style.display = 'none';
+            
+            // Animate counters
+            animateCounters();
+        }, 1500);
+    });
+
+    document.querySelector('.close-button').addEventListener('click', function() {
+        const modal = document.getElementById('modalOverlay');
+        modal.classList.remove('active');
+    });
+
+    function animateCounters() {
+        const counters = document.querySelectorAll('.counter-number');
+        
+        counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-target'));
+            const duration = 2000;
+            const start = 0;
+            const increment = target / (duration / 16);
+            let current = start;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    clearInterval(timer);
+                    current = target;
+                }
+                counter.textContent = Math.floor(current);
+            }, 16);
+            
+            counter.style.animation = 'countUp 0.5s forwards';
+        });
+    }
+</script>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-title">War Crimes & Justice</div>
+        <div class="headline">The Nuremberg Trials: A Landmark in Justice</div>
+        <div class="byline">📅 October 1946 | 📍 Nuremberg, Germany</div>
+        
+        <div class="article">
+            <p>In a historic moment for international law, the Nuremberg Trials held Nazi leaders accountable for their crimes during World War II. These trials, which began on November 20, 1945, set a new precedent by making political leaders criminally responsible for their actions.</p>
+            
+            <img src="C:\Users\mboow\OneDrive\Pictures\Screenshots\Screenshot 2025-05-31 225814.png" class="photo" alt="Nuremberg Trials">
+            <div class="caption">U.S. prosecutor Robert Jackson (left) and Soviet assistant prosecutor Colonel Yuri Pokrovsky at the Nuremberg Trials, October 1946 (Bettmann/Corbis)</div>
+            
+            <p>At first, many doubted that the trials would happen. The British Foreign Office believed that Nazi crimes were too horrific for ordinary courts. However, the United States War Department pushed for a tribunal, arguing that justice must be carried out publicly.</p>
+            
+            <div class="subhead">Judges & Charges</div>
+            <p>The tribunal had eight judges, two from each Allied power:</p>
+            <p><strong>United States:</strong> Francis Biddle, John Parker</p>
+            <p><strong>United Kingdom:</strong> Sir Geoffrey Lawrence, Norman Birkett</p>
+            <p><strong>Soviet Union:</strong> Iona Nikitchenko, Alexander Volchkov</p>
+            <p><strong>France:</strong> Henri Donnedieu de Vabres, Robert Falco</p>
+            
+            <p>Robert Jackson, a U.S. Supreme Court justice, led the prosecution. Twenty-two Nazi officials were prosecuted, including Hermann Goering, Rudolf Hess, and Joachim von Ribbentrop.</p>
+            
+            <div class="subhead">Historic Verdicts & Legacy</div>
+            <p>The trials ended on September 30, 1946. Twelve defendants, including Goering, were sentenced to death. Others received life or long prison sentences, while three were acquitted.</p>
+            
+            <p>The Nuremberg Trials changed global law. They introduced the idea that leaders could be held accountable for crimes against humanity, no matter their official position.</p>
+        </div>
+        
+        <div class="advertisement">
+            <div class="ad-title">Do Your Part for Victory!</div>
+            <p>Buy War Bonds Today</p>
+            <p>Keep America Strong</p>
+            <p>Report Any Suspicious Activity</p>
+            <p>Remember: Loose Lips Sink Ships!</p>
+        </div>
+        
+        <div class="footer">
+            <p>The Revolutionary Times | Established 1776 | Price: 5¢</p>
+            <p>"All the News That's Fit to Print"</p>
+        </div>
+    </div>
+</body>
+</html>
